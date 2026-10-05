@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshini's Cake Shop | Erode</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-area">
+            <div class="logo">🍰</div>
+            <h2>Roshini's Cake Shop</h2>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#location">Location</a>
+        </nav>
+
+        <a href="#products" class="visit-btn">Visit Shop</a>
+    </header>
+
+
+    <!-- HERO / BANNER -->
+    <section id="home" class="banner">
+
+        <div class="banner-content">
+            <p class="small-title">Freshly Baked With Love</p>
+
+            <h1>Sweet Moments<br>
+                <span>Made Delicious</span>
+            </h1>
+
+            <p>
+                Delicious cakes, brownies, chocolates and birthday cakes
+                made especially for your special moments.
+            </p>
+
+            <a href="#products" class="shop-btn">Explore Our Products</a>
+        </div>
+
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section id="products" class="products-section">
+
+        <div class="section-title">
+            <p>OUR SPECIALITIES</p>
+            <h2>Our Products</h2>
+            <span></span>
+        </div>
+
+        <div class="product-container">
+
+            <!-- CAKE -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+                         alt="Chocolate Cake">
+                </div>
+
+                <div class="product-info">
+                    <h3>Delicious Cakes</h3>
+                    <p>
+                        Soft, creamy and delicious cakes freshly baked
+                        for every celebration.
+                    </p>
+
+                    <button onclick="orderProduct('Delicious Cakes')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- BROWNIE -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80"
+                         alt="Brownies">
+                </div>
+
+                <div class="product-info">
+                    <h3>Chocolate Brownies</h3>
+                    <p>
+                        Rich and fudgy brownies filled with delicious
+                        chocolate goodness.
+                    </p>
+
+                    <button onclick="orderProduct('Chocolate Brownies')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- BIRTHDAY CAKE -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=800&q=80"
+                         alt="Birthday Cake">
+                </div>
+
+                <div class="product-info">
+                    <h3>Birthday Cakes</h3>
+                    <p>
+                        Beautiful customized birthday cakes to make
+                        your celebration unforgettable.
+                    </p>
+
+                    <button onclick="orderProduct('Birthday Cakes')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- CHOCOLATES -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1575377427642-087cf684f29d?auto=format&fit=crop&w=800&q=80"
+                         alt="Chocolates">
+                </div>
+
+                <div class="product-info">
+                    <h3>Premium Chocolates</h3>
+                    <p>
+                        Sweet and creamy chocolates perfect for gifting
+                        and celebrations.
+                    </p>
+
+                    <button onclick="orderProduct('Premium Chocolates')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about-section">
+
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80"
+                 alt="Fresh Cake">
+        </div>
+
+        <div class="about-content">
+            <p class="small-title">WHY CHOOSE US?</p>
+
+            <h2>Baked Fresh,<br>
+                Served With Love ❤️
+            </h2>
+
+            <p>
+                At Roshini's Cake Shop, we believe every celebration
+                deserves something sweet. Our cakes and desserts are
+                freshly prepared using quality ingredients.
+            </p>
+
+            <div class="features">
+                <div>
+                    <strong>🎂</strong>
+                    <p>Freshly Baked</p>
+                </div>
+
+                <div>
+                    <strong>🍫</strong>
+                    <p>Quality Ingredients</p>
+                </div>
+
+                <div>
+                    <strong>❤️</strong>
+                    <p>Made With Love</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FEEDBACK -->
+    <section id="feedback" class="feedback-section">
+
+        <div class="section-title">
+            <p>WHAT CUSTOMERS SAY</p>
+            <h2>Customer Feedback</h2>
+            <span></span>
+        </div>
+
+        <div class="feedback-container">
+
+            <div class="feedback-card">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "The cake was absolutely delicious! It was fresh,
+                    soft and beautifully decorated."
+                </p>
+
+                <h4>— Priya</h4>
+            </div>
+
+
+            <div class="feedback-card">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Amazing brownies and chocolates. Everyone at the
+                    party loved them!"
+                </p>
+
+                <h4>— Kavya</h4>
+            </div>
+
+
+            <div class="feedback-card">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "The birthday cake looked beautiful and tasted
+                    even better. Highly recommended!"
+                </p>
+
+                <h4>— Arun</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LOCATION -->
+    <section id="location" class="location-section">
+
+        <div class="section-title">
+            <p>COME VISIT US</p>
+            <h2>Our Location</h2>
+            <span></span>
+        </div>
+
+        <div class="location-container">
+
+            <div class="location-info">
+
+                <h3>Roshini's Cake Shop 🍰</h3>
+
+                <p>
+                    📍 Erode, Tamil Nadu, India
+                </p>
+
+                <p>
+                    📞 +91 98765 43210
+                </p>
+
+                <p>
+                    ✉️ roshinicakes@example.com
+                </p>
+
+                <h4>Opening Hours</h4>
+
+                <p>
+                    Monday - Sunday<br>
+                    9:00 AM - 9:00 PM
+                </p>
+
+            </div>
+
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps?q=Erode,Tamil%20Nadu&output=embed"
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>🍰 Roshini's Cake Shop</h2>
+
+                <p>
+                    Making every celebration sweeter with freshly
+                    baked goodness.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#feedback">Feedback</a>
+                <a href="#location">Location</a>
+            </div>
+
+
+            <div>
+                <h3>Follow Us</h3>
+
+                <div class="social">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Roshini's Cake Shop | Erode. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
